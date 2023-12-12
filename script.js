@@ -24,3 +24,8 @@ if (e.target !== modalWindow){
     closeModal();
     } 
 })
+document.addEventListener('keydown', (e) => {
+    if (e.key == "Escape" && !modalWindow.classList.contains('hidden')) {
+            closeModal();
+    } 
+})
